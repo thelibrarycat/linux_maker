@@ -1,0 +1,49 @@
+{
+  "target": [
+    {
+      "name": "raspberry pi 3b", 
+      "kernel": "Image",
+      "deviceTree": "bcm2710-rpi-3-b.dtb",
+      "memory": 1024,
+      "CPU": "cortex a53",
+      "coreNumber": 4,
+      
+     
+      "uboot": {
+        "defconfig": "rpi_3_defconfig",
+        "kernelAddress": "0x2000000",
+        "deviceTreeAddress": "0x200000"
+      },
+      
+      
+
+
+    }
+    
+  ],
+
+  "uboot": [
+    {
+      "defconfig": "rpi_3_defconfig",
+      "kernelAddress": "0x2000000",
+      "deviceTreeAddress": "0x200000"
+    },
+    
+    {
+      "defconfig": "qemu_arm64_defconfig"
+    }
+  ],
+
+  "qemu": [ 
+    {
+      "defconfig": "raspi3b"
+    },
+    {
+      "defconfig": "virt"
+    }
+    
+  ]
+
+  
+
+}
