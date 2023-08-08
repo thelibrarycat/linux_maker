@@ -1,17 +1,3 @@
-# Work flow
-
-```
-initial  -+->  firmware   busybox   kernel   -+->  uboot  ->  deploy -> qemu 
-          |                                   ^
-          |                                   |
-          +-            buildroot            -+
-```
-
-<br/>  
-<br/>
-
-
-
 # crosstool-ng
 
 ### ./ct-ng menuconfig
